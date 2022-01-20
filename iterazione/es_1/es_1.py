@@ -8,7 +8,7 @@ from pydoc import doc
 
 N = int(input("Inserisci un numero: "))
 if(N < 0):
-    N = input('Reinserisci il numero: ')
+    print('Numero non valido')
     exit()
 else:
     N += 1
