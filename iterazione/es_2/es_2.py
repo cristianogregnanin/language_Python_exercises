@@ -4,16 +4,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- 
 
-from ast import While
+while True:
+    N = int(input("Inserisci un numero intero e positivo: "))
 
-
-N = int(input("Inserisci un numero intero e positivo: "))
-
-if(N < 0):
-    print("Numero non valido")
-    exit()
-else:
-    cont = 1
-    while(cont <= N):
-        print(cont)    
-        cont += 1
+    if(N < 0):
+        print("Numero non valido")
+    else:
+        cont = 1
+        while(cont <= N):
+            print(cont)    
+            cont += 1
+    
+    risposta = int(input("Vuoi ripetere il programma?\nInserisci il numero dell'azione che vuoi effettuare\n1)Continua\n2)Esci\n"))
+    if(risposta == 2):
+        break
