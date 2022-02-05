@@ -9,5 +9,4 @@ while i < len(array):
     i +=1
 print("Adesso l'array e' popolato completamente")
 
-for number in array:
-    print(number)
+print(array[::1])
