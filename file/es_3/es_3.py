@@ -13,6 +13,7 @@ etaMedia = 0
 while True:
     line = f.readline()
     if line == "":
+        f.close()
         break
     else:
         studenti.append(Studente(line.split(' ')[0], line.split(' ')[1], int(line.split(' ')[2])))
