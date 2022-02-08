@@ -1,0 +1,11 @@
+#!/usr/bin/env pyton
+#-*- coding:utf-8 -*-
+
+N=int(input("inserisci un numero\n"))
+if(N<0):
+    print("numero non valido")
+    exit()
+
+print()
+for numero in range(1,N+1,2):
+    print(numero)
