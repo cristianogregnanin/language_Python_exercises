@@ -1,5 +1,5 @@
 Si crei un programma che nel momento dell'esecuzione popoli l'array
-argv[] con una serie di numeri. Esempio: $ ./a.out 1 5 9 6
+argv[] con una serie di numeri. Esempio: $ python3 es3.py 1 5 9 6
 Il programma deve quindi chiedere in input un numero e deve cercarlo 
 all'interno dell'array argv.
 Se il numero è presente il programma deve dare un messaggio positivo
