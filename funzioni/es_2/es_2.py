@@ -17,6 +17,8 @@ def media(arr):
         somma += int(arr[i])
     return somma / (len(arr)-1)
 
-
 ar = sys.argv
-print("La media dei valori é: %f" % media(ar))
+if (len(ar) > 1):
+    print("La media dei valori é: %f" % media(ar))
+else:
+    print("Argomenti del argv sbagliato")
