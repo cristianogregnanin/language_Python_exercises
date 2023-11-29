@@ -17,3 +17,18 @@ while 1:
     
 os.close(fd)
 conn.close()
+
+import socket,os,sys
+HOST = ""               
+PORT = sys.argv[1] 
+vocali = ""
+nvocali = ""         
+socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+socket.bind((HOST, PORT))
+socket.listen(6)
+while 1:
+    conn, addr = socket.accept()
+    fd = conn.recv(1024).decode()
+    
+
+    conn.send(nvocali.encode())
