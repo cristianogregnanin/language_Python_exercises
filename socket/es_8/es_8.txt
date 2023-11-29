@@ -4,11 +4,11 @@ Il server deve inviare al client la stringa senza il carattere.
 Si controllino opportunamente argc e argv sia nel client che nel server
 
 Esempio
-$./server <server-ip> -p <porta>
-$./server 127.0.0.1 -p 50000
+$python3 server <server-ip> -p <porta>
+$python3 server 127.0.0.1 -p 50000
 
-$./client <server-ip> -p <porta> <stringa> <carattere>
-$./client 192.168.2.75 -p 50000 tutti t
+$python3 client <server-ip> -p <porta> <stringa> <carattere>
+$python3 client 192.168.2.75 -p 50000 tutti t
 
 
 Opzionale:
