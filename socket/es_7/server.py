@@ -10,7 +10,7 @@ def consonanti(stringa):
             consonanti += char
     return vocali, consonanti
 HOST = ""               
-PORT = 50000 
+PORT = sys.argv[1] 
 vocali = ""
 nvocali = ""         
 socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
