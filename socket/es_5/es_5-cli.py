@@ -5,6 +5,7 @@ argv = sys.argv
 
 if(len(argv) != 5):
     print("Errore: numero argomenti errato!")
+    sys.exit(0)
 
 HOST = argv[1]
 PORT = int(argv[2])
