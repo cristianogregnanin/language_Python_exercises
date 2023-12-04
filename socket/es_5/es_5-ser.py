@@ -6,6 +6,7 @@ argv = sys.argv
 
 if(len(argv) != 2):
     print("Errore: numero argomenti errato!")
+    sys.exit(0)
 
 def dividi_persone(nome_file):
     for line in file:
