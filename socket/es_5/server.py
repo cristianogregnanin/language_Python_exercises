@@ -13,7 +13,7 @@ class Contato:
 def popola(contati, rubrica):
     with open(rubrica, "r") as file:
         for line in file:
-            data = line.strip().split()
+            data = line.split()
             contato = Contato(data[0], data[1], data[2])
             contati.append(contato)
 
@@ -21,7 +21,7 @@ def ordina(contati):
     contati.sort(key=lambda x: x.nome)
 
 HOST = ""
-PORT = 5009
+PORT = int(sys.argv[1])
 contati = []
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
