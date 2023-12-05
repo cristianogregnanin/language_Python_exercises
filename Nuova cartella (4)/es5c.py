@@ -28,8 +28,6 @@ rubrica = []
 rubrica = lettura_file(nome_file_rubrica, rubrica)
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client_socket.connect((indirizzo, porta))
-print("connessione in corso")
-conn, addr = client_socket.accept()
 print("connesso")
 rubrica_serializzata = pickle.dumps(rubrica)
 conn.send(rubrica_serializzata)
@@ -37,7 +35,6 @@ rubrica_serializzata = conn.recv(4096)
 rubrica_deserializzata = pickle.loads(rubrica_serializzata)
 scrittura_file(nome_file_newRubrica,rubrica_deserializzata)
 
-conn.close()
 client_socket.close()
      
      
