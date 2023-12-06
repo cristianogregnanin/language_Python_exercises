@@ -3,7 +3,7 @@ import sys
 import os
 
 if len(sys.argv) < 6 or not os.path.exists(sys.argv[4]):
-    print("Errore negli argomenti <file> <carattere> <ip> <porta>")
+    print("Errore negli argomenti <ip> <porta> <file> <carattere>")
     exit()
 PORT = int(sys.argv[3])
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
