@@ -5,12 +5,12 @@ import os
 if len(sys.argv) < 6 or not os.path.exists(sys.argv[4]):
     print("Errore negli argomenti <ip> <porta> <file> <carattere>")
     exit()
-PORT = int(sys.argv[3])
+PORT = int(sys.argv[2])
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect((sys.argv[2], PORT))
-file = open(sys.argv[1], "r")
+s.connect((sys.argv[1], PORT))
+file = open(sys.argv[3], "r")
 text = file.read()
-carattere = sys.argv[5]
+carattere = sys.argv[4]
 s.send(text.encode())
 s.recv(1024)
 s.send(carattere.encode())
