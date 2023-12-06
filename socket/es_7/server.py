@@ -21,6 +21,10 @@ def prelVocCons(stringa):
 
 argv = sys.argv
 
+if len(argv) != 2:
+    print("Utilizzo: python server.py <porta>")
+    sys.exit(1)
+
 HOST = ""
 PORT = int(argv[1])
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -28,6 +32,7 @@ s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
 s.bind((HOST, PORT))
 s.listen(10)
+print(f"Server in ascolto su {HOST}:{PORT}")
 
 while 1:
     conn, addr = s.accept()
@@ -39,7 +44,8 @@ while 1:
     print("Stringa consonanti: " + strConsonanti)
     print("Stringa vocali: " + strVocali)
     conn.send(strVocali.encode())
+    var = conn.recv(2).decode()
     conn.send(strConsonanti.encode())
-    conn.close
+    conn.close()
     
 s.close()
