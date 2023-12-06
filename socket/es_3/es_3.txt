@@ -8,5 +8,5 @@ il risultato al client.
 
 Esempio di esecuzione con file testo.txt contente la stringa "pippo":
 $ python3 server.py 5010
-$ python3 client.py testo.txt p 192.168.2.94 5010
+$ python3 client.py 192.168.2.94 5010 testo.txt p
 Il carattere p compare 3 volte

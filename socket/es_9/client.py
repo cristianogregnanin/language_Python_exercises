@@ -1,4 +1,4 @@
-import os, socket, stat, sys
+import os, socket,  sys
 
 if len(sys.argv) != 4:
     print "Usare: %s porta ip file" % (sys.argv[0])
