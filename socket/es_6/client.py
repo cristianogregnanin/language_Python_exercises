@@ -1,5 +1,4 @@
-import socket
-import sys
+import socket, sys
 
 if len(sys.argv) < 3:
     print("Errore negli argomenti <ip> <porta>")
@@ -22,4 +21,3 @@ http_response = s.recv(4096).decode()
 s.close
 
 print(http_response)
-
