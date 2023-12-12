@@ -1,2 +1,1 @@
-Si scriva un client che interroga il sito facendo una request di tipo GET e mostrando
-a video l'http response
+Si scriva un client che interroga il sito libero.it facendo una request di tipo GET e mostrando a video l'http response
