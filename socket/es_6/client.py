@@ -19,6 +19,7 @@ http_request = "GET / HTTP/1.1\r\nHost:#{HOST}\r\n\r\n"
 s.send(http_request.encode())
 
 http_response = s.recv(4096).decode()
+s.close
 
 print(http_response)
-s.close
+
