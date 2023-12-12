@@ -14,10 +14,6 @@ PORT = int(argv[2])
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((HOST, PORT))
 
-http_request = """GET / HTTP/1.1
-Host: #{HOST}
-Connection: Keep-Alive\r\n\n"""
-
 http_request = "GET / HTTP/1.1\r\nHost:#{HOST}\r\n\r\n"
 
 s.send(http_request.encode())
