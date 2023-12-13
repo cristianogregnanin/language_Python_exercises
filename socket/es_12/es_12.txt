@@ -1,0 +1,22 @@
+La ditta ProgrammatoriHero ha ricevuto una commessa per il valore di 125000 Euro che prevede la creazione di un nuovo protocollo di comunicazione
+che consenta lo scambio informazioni fra due macchine remote. 
+Il protocollo deve avere le seguenti caratteristiche:
+
+Il server riceve una stringa dal client attraverso la rete internet, tale stringa può essere: SOMMA oppure DIFFERENZA.
+Il server riceve 2 numeri dal client e, in funzione della stringa precedentemente ricevuta, esegue la somma oppure la differenza dei due numeri. 
+Il server manda il risultato al client.
+Il client stampa a video il risultato.
+
+
+
+Vincoli:
+Usare argc e argv come nelle esercitazioni in classe
+Il server deve demandare il calcolo della somma oppure della differenza ad un processo figlio 
+Indirizzo e porta devono essere specificati in argv 
+eseguire gli opportuni controlli su argv
+
+
+Esempio:
+$ python3 client.py 192.168.2.94 32000 5 6 SOMMA
+
+$python3 server.py 32000
